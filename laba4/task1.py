@@ -1,0 +1,8 @@
+readFile = open("in.txt", "r", encoding="utf8")
+fileText = readFile.read()
+readFile.close()
+deleteWord = input("Delete word ")
+newFileText = fileText.replace(deleteWord, "")
+writeFile = open("out.txt", "w", encoding="utf8")
+writeFile.write(newFileText)
+writeFile.close()
